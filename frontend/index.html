@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Guessing Game</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gray-100 min-h-screen flex items-center justify-center">
+    <div class="bg-white p-8 rounded-lg shadow-lg max-w-md w-full">
+        <h1 class="text-3xl font-bold text-center mb-6">Number Guessing Game</h1>
+        
+        <div id="game-container" class="space-y-6">
+            <p class="text-gray-600 text-center">
+                Try to guess the number between 1 and 100!
+            </p>
+            
+            <div class="flex space-x-4">
+                <input type="number" 
+                       id="guess-input" 
+                       class="flex-1 p-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400"
+                       placeholder="Enter your guess">
+                <button onclick="makeGuess()" 
+                        class="bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600 transition">
+                    Guess
+                </button>
+            </div>
+
+            <div id="message" class="text-center text-lg font-semibold hidden"></div>
+            <div id="attempts" class="text-center text-gray-600 hidden"></div>
+
+            <button onclick="startNewGame()" 
+                    class="w-full bg-green-500 text-white px-4 py-2 rounded-lg hover:bg-green-600 transition">
+                New Game
+            </button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 

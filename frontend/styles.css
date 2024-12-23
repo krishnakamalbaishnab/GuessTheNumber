@@ -1,0 +1,11 @@
+.message-success {
+    color: #059669;
+}
+
+.message-error {
+    color: #dc2626;
+}
+
+.hidden {
+    display: none;
+} 
